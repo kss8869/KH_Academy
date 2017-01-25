@@ -13,6 +13,11 @@
 <link rel="stylesheet" type="text/css" href="/semi/css/mainLayout.css?ver=1">
 </head>
 <%
+String grade_s=(String)session.getAttribute("grade");
+if(grade_s==null||grade_s.equals("")){
+	grade_s="3";//null이거나 공백값일때 일반회원의 값인 3을 넣어준다.
+}
+int grade=Integer.parseInt(grade_s);
 String location=request.getParameter("location");
 if(location==null||location.equals("")){
 	location="Yongsan";
@@ -129,6 +134,15 @@ if(cp2%pageSize==0)userGroup2--;
 			%>
 			</tbody>
 		</table>
+		<%
+		if(grade==1){
+			%>
+			<div>
+			<a href="/semi/course/recomFoodWrite.jsp?location=<%=localname%>">글쓰기</a>
+			</div>
+			<%
+		}
+		%>
 	</article>
 	<article id="seoulPlaceList">
 		<table>
@@ -198,6 +212,15 @@ if(cp2%pageSize==0)userGroup2--;
 			%>
 			</tbody>
 		</table>
+		<%
+		if(grade==1){
+			%>
+			<div>
+			<a href="/semi/course/recomPlaceWrite.jsp?location=<%=localname%>">글쓰기</a>
+			</div>
+			<%
+		}
+		%>
 	</article>
 </section>
 <%@include file="/footer.jsp" %>
