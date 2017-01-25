@@ -1,0 +1,45 @@
+@CHARSET "utf-8";
+body{
+	margin:0px auto;	
+	
+}
+header p{
+	text-align:right;
+	font-size: 25px;
+}
+header{
+	 width:580px;
+}
+header h1{
+		text-shadow: 5px 5px 5px darkblue;	
+		text-align:center;
+}
+td img{
+	width: 70px;
+}
+nav{
+	width:680px;
+}
+nav li{
+	display:inline;	
+	margin-left: 50px;
+}
+a:link{
+	color:black;
+	text-decoration:none;
+}
+section {
+ 	width: 880px;
+	}
+#one{float:left;
+	}
+#test{
+
+		float:left;
+	}
+footer{
+	clear:both;
+	}
+	p{
+		text-align:center;	
+	}

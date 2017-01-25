@@ -1,0 +1,56 @@
+@CHARSET "utf-8";
+body{
+			width: 1024px;
+			margin: 0px auto;
+		}
+		header{
+			width: 1024px;
+		}
+		header p{
+			font-size: 15px;
+			text-align: right;
+		}
+		/*자손 선택자*/
+		header h1{
+			text-align: center;
+			font-size: 45px;
+			text-shadow: 5px 5px 5px darkblue;
+		}
+		header nav{
+			border-top: 2px solid darkblue;
+			border-bottom: 2px solid darkblue;
+		}
+		/*자손의 자손 선택자*/
+		header nav li{
+			list-style-type: none;
+			display: inline;
+			margin-left: 50px;
+		}
+		section{
+			width: 1024px;
+		}
+		#seoulMap{
+			width: 500px;
+			float: left;
+		}
+		#seoulMap img{
+			width: 465px;
+		}
+		#seoulFoodList{
+			width: 250px;
+			float: left;
+		}
+		#seoulPlaceList{
+			width: 250px;
+			float: left;
+		}
+		#mainMenu{
+			float: left;
+		}
+		footer{
+			width: 1024px;
+			clear: both;
+		}
+		footer p{
+			text-align: center;
+		}
