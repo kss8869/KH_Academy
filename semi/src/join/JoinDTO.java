@@ -1,7 +1,7 @@
 package semi.join;
 
 import java.sql.Date;
-
+//hi
 public class JoinDTO {
 	
 	private int idx;
