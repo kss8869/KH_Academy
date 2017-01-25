@@ -32,7 +32,7 @@ table fieldset{
 	 				</td>
 				</tr>
 				<tr>
-					<td colspan="2">추천후기</td>
+					<td colspan="2">추천후기ss</td>
 					<td colspan="2">오늘 추천코스</td>
 				</tr>	
 			</table>
