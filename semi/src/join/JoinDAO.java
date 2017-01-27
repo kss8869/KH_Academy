@@ -4,7 +4,7 @@ import java.sql.*;
 
 import java.util.*;
 
-//hi
+
 
 public class JoinDAO {
 	
@@ -280,13 +280,13 @@ public class JoinDAO {
 	}
 	
 	/**PWD찾기 */
-	public String findPwd(String name, String email, String question, String answer){
+	public String findPwd(String id, String email, String question, String answer){
 		try {
 			String pwd = "";
-			String sql = "select * from join where name=? and email=? and question=? and answer=?";
+			String sql = "select * from join where id=? and email=? and question=? and answer=?";
 
 			ps = conn.prepareStatement(sql);
-			ps.setString(1, name);
+			ps.setString(1, id);
 			ps.setString(2, email);
 			ps.setString(3, question);
 			ps.setString(4, answer);
@@ -296,7 +296,6 @@ public class JoinDAO {
 			if (rs.next()) {
 				pwd = rs.getString("pwd");
 				String sql2 ="update join set count=0 where id=?";
-				String id = rs.getString("id");
 				
 				ps = conn.prepareStatement(sql2);
 				ps.setString(1, id);
