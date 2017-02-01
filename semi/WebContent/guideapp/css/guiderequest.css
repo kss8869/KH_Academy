@@ -1,0 +1,15 @@
+@CHARSET "EUC-KR";
+#guideapp_request textarea{
+	width: 300px;
+	height: 250px;
+}
+#guideapp_request input{
+	background-color:#FFFFFF;
+	
+	background-position:left top;
+	background-repeat:no-repeat;
+	border:1px #AAAAAA solid;
+	padding-top:5px;
+	font-size:12px;
+	color:#777777;
+}

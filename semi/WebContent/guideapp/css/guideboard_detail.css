@@ -1,0 +1,45 @@
+@CHARSET "EUC-KR";
+
+#guideapp_guideboard_detail{
+	
+	width: 400px;
+	height: 350px;
+	border: 3px solid black;
+	margin: auto;
+}
+#guideboard_detail_top{
+	font-style:bold;
+	margin-left: 50px;
+}
+#guideboard_detail_top>p{
+	text-align: center;
+	
+}
+#guideapp_guideboard_detail td{
+	width: 50px;
+	height: 40px;
+	
+}	
+#guideboard_detail_top th{
+	text-align: left;
+}
+#guideboard_detail_top td{
+	text-align: left;
+	
+}
+
+#guideboard_detail_top fieldset {
+	width: 300px;
+	height: 250px;
+}
+
+#guideboard_detail_middle fieldset{
+	width: 100px;
+	height: 50px;	
+}
+#guideboard_detail_middle{
+	width: 60%;
+	margin: auto;
+}
+
+
