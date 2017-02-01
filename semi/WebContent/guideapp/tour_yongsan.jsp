@@ -29,27 +29,25 @@
 	<div class="div_1">
 		<table border="1">
 			<tr>
-				<td>
-					<img src="guideapp/img/tourlist/yp_1_5.jpg" width="100px" height="100px">
-					<img src="guideapp/img/tourlist/yp_2_7.jpg" width="100px" height="100px">
-					<img src="guideapp/img/tourlist/yp_5_1.jpg" width="100px" height="100px">
-					<img src="guideapp/img/tourlist/yp_5_3.jpg" width="100px" height="100px">
-				</td>	
+				<td><img src="guideapp/img/tourlist/yp_1_5.jpg" width="100px" height="100px"></td>	
+				<td><img src="guideapp/img/tourlist/yp_2_7.jpg" width="100px" height="100px"></td>
+				<td><img src="guideapp/img/tourlist/yp_5_1.jpg" width="100px" height="100px"></td>
+				<td><img src="guideapp/img/tourlist/yp_5_3.jpg" width="100px" height="100px"></td>
 			</tr>
 			<tr>
-				<td>
+				<td colspan="4">
 					<p>&#91;서울가이드 상담문의&#93;070-1234-5678</p>
 					<p>&#91;상담가능시간&#93;오전 09:00~12:00,오후 13:00~18:00|토/일,공휴일은 온라인문의만 가능</p>
 				</td>
 			</tr>
 			<tr>
-				<td>
+				<td colspan="4">
 					<a href="index.jsp?menu=guideapp&pagename=guiderequest"><input type="button" value="가이드신청"></a>
 					<a href="index.jsp?menu=guideapp&pagename=guidetour_list"><input type="button" value="목록보기"></a>
 				</td>
 			</tr>
 			<tr>
-				<td><font>용산구 전문 가이드 명:김재혁</font></td>
+				<td colspan="4"><font>용산구 전문 가이드 명:김재혁</font></td>
 			</tr>
 		</table>
 	</div>
@@ -132,8 +130,8 @@
 		</table>
 	</div>
 	<div id="tour_detail_second_table2">
-		<p>일정표</p>
-		<table>
+		<p align="left">일정표</p>
+		<table border="1">
 			<thead>
 				<tr>
 					<td colspan="2">첫 만남!</td>
@@ -156,7 +154,8 @@
 					 </td>
 				</tr>
 				<tr>
-					<td>용산구
+					<td width="100px">용산구</td>
+					<td>	
 						<p>&#91;08:00&#93; 용산구 이태원역 도착...</p>
 						<p>-> 허기진 아침 배를 달래줄 브런치 식사[이태원 브런치맛집 더플라잉 팬 블루 방문]</p>
 						<p>&#91;09:00&#93; 이태원 역 부근  골목 사이사이 개성이 가득한 가게 들을 눈으로 보고 즐기기~</p>
@@ -206,7 +205,7 @@
 	<p>예약시 유의사항</p>
 	<table border="1">
 		<tr>
-			<td>취소료 규정</td>
+			<td width="100px">취소료 규정</td>
 			<td>
 				<p>★본 상품의 버스료에 대한 비용은 예약완료후에 변경과 취소가 불가능한 상황이며, 취소시에는 별도의 취소수수료가 적용되오니 꼭 확인하시고, 예약하여 주시기 바랍니다.</p>
 				<p>★ 예약하신 상품의 예약취소와 변경은 근무시간에 전화로만 가능합니다.</p>
@@ -218,7 +217,7 @@
 			</td>
 		</tr>
 		<tr>
-			<td>유의 사항</td>
+			<td width="100px">유의 사항</td>
 			<td>
 				<p>1. 소인요금은 만24개월 ~ 만 12세까지 어린이에게만 적용됩니다.</p>
 				<p>2. 유아(만24개월 미만)에게는 별도의 좌석 및 식사가 제공되지 않습니다.(여행자보험 가입)</p>

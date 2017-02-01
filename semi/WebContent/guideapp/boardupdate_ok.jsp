@@ -6,8 +6,6 @@
 	String id =	request.getParameter("id");
 	String subject = request.getParameter("subject");
 	String content =request.getParameter("content");
-
-	
 	
 	int result=dao.board_update(id, subject, content);
 	

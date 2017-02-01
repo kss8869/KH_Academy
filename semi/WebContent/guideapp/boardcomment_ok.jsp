@@ -10,13 +10,7 @@
 	String id=request.getParameter("id");
 	String content=request.getParameter("content");
 	
-<<<<<<< HEAD
 	int count=dao.commentUpdate(boardidx, id, content);
-=======
-	int count=dao.commentUpdate(boardidx, id, content, guideid);
->>>>>>> branch 'master' of https://github.com/kss8869/KH_Academy.git
-	
-
 	if(count==0){
 		%>
 		<script>

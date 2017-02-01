@@ -9,7 +9,6 @@
 	String id=request.getParameter("id");
 	String subject=request.getParameter("subject");
 	String content=request.getParameter("content");
-<<<<<<< HEAD
 	String guidelocal=request.getParameter("guidelocal");
 	int local=Integer.parseInt(guidelocal);
 	String guideid="";
@@ -50,10 +49,6 @@
 	}
 	
 	int result=dao.board_insert(id,subject,content,guideid);
-=======
-	
-	int result=dao.board_insert(id,subject,content);
->>>>>>> branch 'master' of https://github.com/kss8869/KH_Academy.git
 	
 	String msg=result>0?"작성완료":"Error!";
 %>

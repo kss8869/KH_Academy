@@ -2,46 +2,58 @@
 /* 상단 부분  */
 #tour_detail_first{
 	border: 3px solid yellow;
+	border-spacing: 0px 0px;
+	border-collapse: collapse;
+}
+#tour_detail_first table{
+	border-spacing: 0px 0px;
+	border-collapse: collapse;
 }
 .div_1{
-	
 	float: left;
 }
 .div_1 >table{
-	width: 550px;
+	width: 500px;
+}
+.div_1 >table>td{
+	padding: 0px;
 }
 .div_2{
 	float: left;
+	width: 500px;
 }
+/*-----------------------------  */
 /* 중단 부분 */
 #tour_detail_second{
 	clear: both;
-}
-#tour_detail_second{
 	border: 2px solid black;
-	
-	
+}
+#tour_detail_second table{
+	margin-right: auto;
 }
 #fieldset_1{
 	width: 800px;
 	padding: 10px;
-	background-color: red;
+	margin-right: auto;
 }
 #tour_detail_second_table1{
 	width: 800px;
 }
-#tour_detail_second_table2{
-	width: 880px;
+#tour_detail_second_table2 {
+
 }
 #tour_detail_second_table2 table{
 	border: 3px solid black;
-	width: 700px;
+	width: 750px;
+	border-spacing: 0px 0px;
+	border-collapse: collapse;
 }
-#tour_detail_second_table2 table td{
-	
-	
-}
+/* -------------------------------  */
 /* 하단 부분  */
-#tour_detail_thrid{
-	
+#tour_detail_thrid table{
+	width: 750px;
+	height: 500px;
+	border-spacing: 0px 0px;
+	border-collapse: collapse;
 }
+/*  -------------------------------*/
