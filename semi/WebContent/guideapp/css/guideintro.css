@@ -1,0 +1,14 @@
+@CHARSET "EUC-KR";
+
+.guideintro_list_title{
+	text-align: center;
+}
+.guideintro_list_td{
+	width:320px;
+	height:300px;
+	padding: 30px;
+}
+.guideintro_list_td img{
+	width: 330px;
+	height: 250px;
+}

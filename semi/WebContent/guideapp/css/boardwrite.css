@@ -1,0 +1,14 @@
+@CHARSET "EUC-KR";
+
+
+#boardwrite_table{
+	width: 450px;
+	height: 400px;
+	border: 2px solid green;
+	
+}
+#boardwrite_table textarea{
+	width: 350px;
+	height: 350px;
+	
+}

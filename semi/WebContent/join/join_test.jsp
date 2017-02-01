@@ -10,7 +10,12 @@
 	<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600' rel='stylesheet' type='text/css">
 	
 	<link href="http://netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css" rel="stylesheet">
+	
+	
 </head>
+<%
+	boolean result = jdao.idcheck();
+%>
 <style>
 body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, 
 pre, form, fieldset, input, textarea, p, blockquote, th, td { 
@@ -201,6 +206,8 @@ input[type=text]:hover {
 
 
 </style>
+
+
 <body>
 
 
@@ -218,6 +225,7 @@ input[type=text]:hover {
   <hr>
   <label id="icon" for="name"><i class="icon-user"></i></label>
   <input type="text" name="id" id="name" placeholder="ID" required/>
+  <input type="hidden" name ="sameID" value="idcheck()" >
   <label id="icon" for="name"><i class="icon-user"></i></label>
   <input type="text" name="name" id="name" placeholder="이름" required/>
   <label id="icon" for="name"><i class="icon-shield"></i></label>
