@@ -1,8 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<jsp:useBean id="jdto" class="semi.join.JoinDTO"/>
-<jsp:setProperty property="*" name="jdto"/>
-<jsp:useBean id="jdao" class="semi.join.JoinDAO"/>
 <html>
 
 <head>
@@ -10,12 +7,8 @@
 	<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600' rel='stylesheet' type='text/css">
 	
 	<link href="http://netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css" rel="stylesheet">
-	
-	
+	<meta charset="UTF-8">
 </head>
-<%
-	boolean result = jdao.idcheck();
-%>
 <style>
 body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, 
 pre, form, fieldset, input, textarea, p, blockquote, th, td { 
@@ -59,7 +52,7 @@ html{
 .testbox {
   margin: 20px auto;
   width: 343px; 
-  height: 664px; <!-- 뒷배경 -->
+  height: 300px; <!-- 뒷배경 -->
   -webkit-border-radius: 8px/7px; 
   -moz-border-radius: 8px/7px; 
   border-radius: 8px/7px; 
@@ -178,11 +171,11 @@ input[type=submit] {
   font-weight: 500;
   color: white;
   
-  margin: 10px 8px 20px 0px;
+  margin: 10px 8px 20px 10px;
   display: inline-block;
   float: right;
   text-decoration: none;
-  width: 80px; height: 35px; 
+  width: 100px; height: 35px; 
   -webkit-border-radius: 5px; 
   -moz-border-radius: 5px; 
   border-radius: 5px; 
@@ -206,52 +199,26 @@ input[type=text]:hover {
 
 
 </style>
-
-
 <body>
 
 
 <div class="testbox">
-  <h1>회원가입</h1>
+  <h1>ID찾기</h1>
 
-  <form action="join_ok.jsp">
+  <form action="find_id_ok.jsp">
       <hr>
-    <div class="accounttype">
-      <input type="radio" value="None" id="radioOne" name="account" checked/>
-      <label for="radioOne" class="radio" checked>Personal</label>
-      <input type="radio" value="None" id="radioTwo" name="account" />
-      <label for="radioTwo" class="radio">Company</label>
-    </div>
-  <hr>
-  <label id="icon" for="name"><i class="icon-user"></i></label>
-  <input type="text" name="id" id="name" placeholder="ID" required/>
-  <input type="hidden" name ="sameID" value="idcheck()" >
-  <label id="icon" for="name"><i class="icon-user"></i></label>
-  <input type="text" name="name" id="name" placeholder="이름" required/>
-  <label id="icon" for="name"><i class="icon-shield"></i></label>
-  <input type="password" name="pwd" id="name" placeholder="비밀번호" required/>
-  <label id="icon" for="name"><i class="icon-envelope "></i></label>
-  <input type="email" name="email" id="name" placeholder="이메일" required/>
-  <label id="icon" for="name"><i class="icon-envelope "></i></label>
   
-  <select name="question">
-  		<option>질문을 선택해주셈</option>  		
-  		<option value="1">출신 학교는?</option>
-  		<option value="2">가장 소중한 보물은?</option>
-  		<option value="3">부모님 성함은?</option>
-  		<option value="4">내 좌우명은?</option>  
-  </select>
-  <label id="icon" for="name"><i class="icon-envelope "></i></label>
-  <input type="text" name="answer" id="name" placeholder="답변" required/>
-  
+ 
   
   <label id="icon" for="name"><i class="icon-user"></i></label>
-  <input type="text" name="ran" id="name"  value="<%=jdao.mkRandomNum() %>"/>
-  <label id="icon" for="name"><i class="icon-envelope "></i></label>
-  <input type="text" name="ran_answer" id="name" placeholder="보안숫자" required/>
+  <input type="text" name="name" id="name" placeholder="Name" required/>
   
-	<p>회원가입 하신 후 더 많은 서비스를 이용하세요</p>
-   <input type="submit" value="Join">
+  <label id="icon" for="name"><i class="icon-envelope "></i></label>
+  <input type="email" name="email" id="name" placeholder="Email" required/>
+ 
+  
+ 
+   <input type="submit" value="아이디찾기">
    
   </form>
 </div>
