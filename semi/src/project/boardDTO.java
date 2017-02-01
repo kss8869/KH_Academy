@@ -10,12 +10,12 @@ public class boardDTO {
 	private String content;
 	private String guideid;
 	private Date comdate;
-
+	private int readnum;
 	//기본생성자
 	public boardDTO(){}
 	
 
-	public boardDTO(int rnum,int idx, int requestidx, String id, String subject, String content, String guideid, Date comdate) {
+	public boardDTO(int readnum,int rnum,int idx, int requestidx, String id, String subject, String content, String guideid, Date comdate) {
 		super();
 		this.rnum = rnum;
 		this.idx = idx;
@@ -25,6 +25,17 @@ public class boardDTO {
 		this.content = content;
 		this.guideid = guideid;
 		this.comdate = comdate;
+		this.readnum = readnum;
+	}
+	
+
+	public int getReadnum() {
+		return readnum;
+	}
+
+
+	public void setReadnum(int readnum) {
+		this.readnum = readnum;
 	}
 
 

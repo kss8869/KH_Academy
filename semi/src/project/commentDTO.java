@@ -7,10 +7,11 @@ public class commentDTO {
 	private String id;
 	private String content;
 	private Date comdate;
+	
 	//기본 생성자
 	public commentDTO(){}
-	//인자생성자
 	
+	//인자생성자
 	public int getIdx() {
 		return idx;
 	}
